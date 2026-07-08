@@ -4,6 +4,7 @@ public:
         for(int i=0;i<=30;i++){
             if(n==pow(3,i)){
                 return true;
+                break;
             }
         }
         return false;
