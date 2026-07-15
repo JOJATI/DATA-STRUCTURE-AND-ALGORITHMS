@@ -13,11 +13,7 @@ public:
         {
             return sum;
         }
-        else
-        {
-            return -1;
-        }
-
+        return -1;
         
     }
 };
