@@ -1,20 +1,23 @@
 class Solution {
 public:
     int sumOfTheDigitsOfHarshadNumber(int x) {
-        
-        int sum=0;
-        int temp=x;
-        int rem=0;
-        while(temp!=0){
-            rem=temp%10;
-            sum+=rem;
-            temp=temp/10;
+
+        int a=x,sum=0;
+        while(a!=0)
+        {
+            sum=sum+a%10;
+            a/=10;
         }
-        if(x%sum==0){
+
+        if(x%sum==0)
+        {
             return sum;
         }
-        else{
+        else
+        {
             return -1;
         }
+
+        
     }
 };
