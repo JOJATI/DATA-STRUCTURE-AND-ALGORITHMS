@@ -18,11 +18,10 @@ public:
         for(int i=0;i<nums.size();i++){
             if(prime(nums[i][i]))
             max_elem = max(nums[i][i],max_elem);
-        }
-        for(int i=0;i<nums.size();i++){
             if(prime(nums[i][nums.size()-i-1]))
             max_elem = max(nums[i][nums.size()-i-1],max_elem);
         }
+        
         return max_elem;
         
     }
