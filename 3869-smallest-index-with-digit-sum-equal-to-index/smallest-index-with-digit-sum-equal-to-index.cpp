@@ -4,12 +4,10 @@ public:
         vector<int> store;
         for(int i=0;i<nums.size();i++){
         int sum=0;
-           int x = nums[i];
-
-        while(x) {
-        int digit = x % 10;
+        while(nums[i]) {
+        int digit = nums[i] % 10;
         sum += digit;
-        x /= 10;
+        nums[i] /= 10;
 }
            if(sum==i) 
            {
